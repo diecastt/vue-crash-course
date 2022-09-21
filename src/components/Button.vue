@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import { TypedChainedSet } from 'webpack-chain';
+
 export default {
     name: 'Button',
     props: {
@@ -13,7 +15,7 @@ export default {
     },
     methods: {
         onClick(){
-            console.log('click')
+            this.$emit('btn-click')
         },    
     }
 }
